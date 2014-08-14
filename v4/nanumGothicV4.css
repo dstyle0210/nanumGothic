@@ -5,29 +5,29 @@
   font-family: 'Nanum Gothic';
   font-style: normal;
   font-weight: 400;
-  src: url(./nanumGothicV4/NanumGothic-Regular.eot);
-  src: url(./nanumGothicV4/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
-       url(./nanumGothicV4/NanumGothic-Regular.woff2) format('woff2'),
-       url(./nanumGothicV4/NanumGothic-Regular.woff) format('woff'),
-       url(./nanumGothicV4/NanumGothic-Regular.ttf) format('truetype');
+  src: url(nanumGothicV4/NanumGothic-Regular.eot);
+  src: url(nanumGothicV4/NanumGothic-Regular.eot?#iefix) format('embedded-opentype'),
+       url(nanumGothicV4/NanumGothic-Regular.woff2) format('woff2'),
+       url(nanumGothicV4/NanumGothic-Regular.woff) format('woff'),
+       url(nanumGothicV4/NanumGothic-Regular.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Nanum Gothic';
   font-style: normal;
   font-weight: 700;
-  src: url(./nanumGothicV4/NanumGothic-Bold.eot);
-  src: url(./nanumGothicV4/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
-       url(./nanumGothicV4/NanumGothic-Bold.woff2) format('woff2'),
-       url(./nanumGothicV4/NanumGothic-Bold.woff) format('woff'),
-       url(./nanumGothicV4/NanumGothic-Bold.ttf) format('truetype');
+  src: url(nanumGothicV4/NanumGothic-Bold.eot);
+  src: url(nanumGothicV4/NanumGothic-Bold.eot?#iefix) format('embedded-opentype'),
+       url(nanumGothicV4/NanumGothic-Bold.woff2) format('woff2'),
+       url(nanumGothicV4/NanumGothic-Bold.woff) format('woff'),
+       url(nanumGothicV4/NanumGothic-Bold.ttf) format('truetype');
 }
 @font-face {
   font-family: 'Nanum Gothic';
   font-style: normal;
   font-weight: 800;
-  src: url(./nanumGothicV4/NanumGothic-ExtraBold.eot);
-  src: url(./nanumGothicV4/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
-       url(./nanumGothicV4/NanumGothic-ExtraBold.woff2) format('woff2'),
-       url(./nanumGothicV4/NanumGothic-ExtraBold.woff) format('woff'),
-       url(./nanumGothicV4/NanumGothic-ExtraBold.ttf) format('truetype');
+  src: url(nanumGothicV4/NanumGothic-ExtraBold.eot);
+  src: url(nanumGothicV4/NanumGothic-ExtraBold.eot?#iefix) format('embedded-opentype'),
+       url(nanumGothicV4/NanumGothic-ExtraBold.woff2) format('woff2'),
+       url(nanumGothicV4/NanumGothic-ExtraBold.woff) format('woff'),
+       url(nanumGothicV4/NanumGothic-ExtraBold.ttf) format('truetype');
 }

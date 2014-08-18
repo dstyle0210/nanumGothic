@@ -1,52 +1,20 @@
 /*
  * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess v4
- * edit dstyle test
+ * edit dstyle
  */
-
-@regular:"nanumGothicV4/NanumGothic-Regular"; 
-@bold:"nanumGothicV4/NanumGothic-Bold";
-@extrabold:"nanumGothicV4/NanumGothic-Regular";
-
-.fontface(@fontname, @fontfile) {
-        font-family: '@{fontname}';
-        src: url('../fonts/@{fontfile}.eot');
-        src: url('../fonts/@{fontfile}.eot?#iefix') format('embedded-opentype'),
-             url('../fonts/@{fontfile}.woff') format('woff'),
-             url('../fonts/@{fontfile}.ttf') format('truetype'),
-        font-weight: normal;
-        font-style: normal;
+@fontname:"Nanum Gothic";
+@fontfile:"nanumGothicV4/NanumGothic-Regular";
+.fontFace(@prefix,@weight){
+	@font-face{
+		font-family: "@{fontname}";
+		font-style: normal;
+  		font-weight:"@{weight}";
+		src: url("@{fontfile}-@{prefix}.eot");
+		src: url('@{fontfile}-@{prefix}.eot?#iefix') format('embedded-opentype'),
+             url('@{fontfile}-@{prefix}.woff') format('woff'),
+             url('@{fontfile}-@{prefix}.ttf') format('truetype');
+	} 
 }
-
-.fontface('Nanum Gothic','nanumGothicV4/NanumGothic-Regular')
-
-
-@font-face {
-  font-family: 'Nanum Gothic';
-  font-style: normal;
-  font-weight: 400;
-  src: url(@regular.eot);
-  src: url(@regular.eot?#iefix) format('embedded-opentype'),
-       url(@regular.woff2) format('woff2'),
-       url(@regular.woff) format('woff'),
-       url(@regular.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nanum Gothic';
-  font-style: normal;
-  font-weight: 700;
-  src: url(@bold.eot);
-  src: url(@bold.eot?#iefix) format('embedded-opentype'),
-       url(@bold.woff2) format('woff2'),
-       url(@bold.woff) format('woff'),
-       url(@bold.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Nanum Gothic';
-  font-style: normal;
-  font-weight: 800;
-  src: url(@extrabold.eot);
-  src: url(@extrabold.eot?#iefix) format('embedded-opentype'),
-       url(@extrabold.woff2) format('woff2'),
-       url(@extrabold.woff) format('woff'),
-       url(@extrabold.ttf) format('truetype');
-}
+.fontFace("Regular","400");
+.fontFace("Bold","700");
+.fontFace("ExtraBold","800");

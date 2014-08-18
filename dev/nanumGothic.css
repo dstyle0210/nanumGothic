@@ -1,10 +1,25 @@
 /*
  * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess v4
- * edit dstyle test
+ * edit dstyle
  */
 @font-face {
-  font-family: 'Nanum Gothic';
+  font-family: "Nanum Gothic";
   font-style: normal;
-  font-weight: 400;
-  src: " url(@regular.eot)";
+  font-weight: "400";
+  src: url("nanumGothicV4/NanumGothic-Regular-Regular.eot");
+  src: url('nanumGothicV4/NanumGothic-Regular-Regular.eot?#iefix') format('embedded-opentype'), url('nanumGothicV4/NanumGothic-Regular-Regular.woff') format('woff'), url('nanumGothicV4/NanumGothic-Regular-Regular.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: "700";
+  src: url("nanumGothicV4/NanumGothic-Regular-Bold.eot");
+  src: url('nanumGothicV4/NanumGothic-Regular-Bold.eot?#iefix') format('embedded-opentype'), url('nanumGothicV4/NanumGothic-Regular-Bold.woff') format('woff'), url('nanumGothicV4/NanumGothic-Regular-Bold.ttf') format('truetype');
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  font-style: normal;
+  font-weight: "800";
+  src: url("nanumGothicV4/NanumGothic-Regular-ExtraBold.eot");
+  src: url('nanumGothicV4/NanumGothic-Regular-ExtraBold.eot?#iefix') format('embedded-opentype'), url('nanumGothicV4/NanumGothic-Regular-ExtraBold.woff') format('woff'), url('nanumGothicV4/NanumGothic-Regular-ExtraBold.ttf') format('truetype');
 }

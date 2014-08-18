@@ -1,0 +1,10 @@
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess v4
+ * edit dstyle test
+ */
+@font-face {
+  font-family: 'Nanum Gothic';
+  font-style: normal;
+  font-weight: 400;
+  src: " url(@regular.eot)";
+}

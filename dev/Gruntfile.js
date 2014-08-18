@@ -1,58 +1,28 @@
 module.exports = function(grunt) {
- 
   grunt.initConfig({
-    concat: {
-      js: {
-        options: {
-          separator: ';'
-        },
-        src: [
-          'javascript/*.js'
-        ],
-        dest: 'public/js/main.min.js'
-      },
-    },
-    uglify: {
-      options: {
-        mangle: false
-      },
-      js: {
-        files: {
-          'public/js/main.min.js': ['public/js/main.min.js']
-        }
-      }
-    },
-    less: {
-      style: {
-        files: {
-          "public/css/style.css": "less/style.less"
-        }
-      }
-    },
-    watch: {
-      js: {
-        files: ['javascript/*.js'],
-        tasks: ['concat:js', 'uglify:js'],
-        options: {
-          livereload: true,
-        }
-      },
-      css: {
-        files: ['less/*.less'],
-        tasks: ['less:style'],
-        options: {
-          livereload: true,
-        }
-      }
-    }
+	  pkg: grunt.file.readJSON('package.json'),
+	  less: {
+			dist: {
+				files: {
+					"nanumGothic.css": ["less/*.less"]
+				}
+			}
+		},
+	    watch: {
+			less:{
+				files: ['less/*.less'],
+				tasks: ['less']
+			}
+		}
   });
- 
-  grunt.loadNpmTasks('grunt-contrib-concat');
-  grunt.loadNpmTasks('grunt-contrib-uglify');
-  grunt.loadNpmTasks('grunt-contrib-less');
-  grunt.loadNpmTasks('grunt-contrib-watch');
- 
   
-  grunt.registerTask('default', ['less','autoprefixer','watch' ]);
+  /*
+	 * 작업에 필요한 모듈 로드하기 grunt.loadNpmTasks('grunt-ANY-PLUGIN');
+	 */ 
+	for (var key in grunt.file.readJSON("package.json").devDependencies) {
+		if (key !== "grunt" && key.indexOf("grunt") === 0) grunt.loadNpmTasks(key);
+	}
+ 
+  grunt.registerTask('default', ['watch']);
   
 };

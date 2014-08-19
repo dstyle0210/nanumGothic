@@ -19,7 +19,7 @@ module.exports = function(grunt) {
 				tasks: ['less']
 			},
 			copy:{
-				files: ['*.html','*.css'],
+				files: ['*.html','*.css','*.js'],
 				tasks: ['copy']
 			}
 		},
@@ -27,7 +27,8 @@ module.exports = function(grunt) {
 			main:{
 				files:[
 				{expand:true,src:["*.html"],dest:"../demo/"},
-				{expand:true,src:["*.css"],dest:"../demo/"},
+				{expand:true,src:["*.css"],dest:"../demo/"}, 
+				{expand:true,src:["nanumGothic.js"],dest:"../demo/"},
 				{expand:true,src:["fonts/*"],dest:"../demo/"}
 				]
 			}

@@ -8,13 +8,14 @@
 	@font-face{
 		font-family: "@{fontname}";
 		font-style: normal; 
-  		font-weight:"@{weight}";
+  		font-weight:@weight;
 		src: url("@{fontfile}-@{prefix}.eot");
 		src: url('@{fontfile}-@{prefix}.eot?#iefix') format('embedded-opentype'),
+			url('@{fontfile}-@{prefix}.woff2') format('woff2'),
              url('@{fontfile}-@{prefix}.woff') format('woff'),
              url('@{fontfile}-@{prefix}.ttf') format('truetype');
 	}
 }
-.fontFace("Regular","400");
-.fontFace("Bold","700");
-.fontFace("ExtraBold","800");
+.fontFace("Regular",400);
+.fontFace("Bold",700);
+.fontFace("ExtraBold",800);

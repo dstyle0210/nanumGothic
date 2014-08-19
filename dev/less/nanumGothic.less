@@ -1,19 +1,19 @@
 /*
  * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess v4
- * edit dstyle
+ * edit dstyle (dstyle@bluegrid.kr , dstyle0210@gmail.com)
  */
 @fontname:"Nanum Gothic";
-@fontfile:"nanumGothicV4/NanumGothic-Regular";
+@fontfile:"fonts/NanumGothic";
 .fontFace(@prefix,@weight){
 	@font-face{
 		font-family: "@{fontname}";
-		font-style: normal;
+		font-style: normal; 
   		font-weight:"@{weight}";
 		src: url("@{fontfile}-@{prefix}.eot");
 		src: url('@{fontfile}-@{prefix}.eot?#iefix') format('embedded-opentype'),
              url('@{fontfile}-@{prefix}.woff') format('woff'),
              url('@{fontfile}-@{prefix}.ttf') format('truetype');
-	} 
+	}
 }
 .fontFace("Regular","400");
 .fontFace("Bold","700");

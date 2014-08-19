@@ -1,0 +1,12 @@
+/*
+ * Nanum Gothic (Korean) http://www.google.com/fonts/earlyaccess v4
+ * edit dstyle (dstyle@bluegrid.kr , dstyle0210@gmail.com)
+ */
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url("fonts/NanumGothic.otf");
+}
+@font-face {
+  font-family: "Nanum Gothic";
+  src: url("fonts/NanumGothic.ttf");
+}

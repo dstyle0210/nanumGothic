@@ -2,9 +2,14 @@ module.exports = function(grunt) {
   grunt.initConfig({
 	  pkg: grunt.file.readJSON('package.json'),
 	  less: {
-			dist: {
+		  	nanumGothic: {
 				files: {
-					"nanumGothic.css": ["less/*.less"]
+					"nanumGothic.css": ["less/nanumGothic.less"]
+				}
+			},
+			nanumGothicwebfont: {
+				files: {
+					"nanumGothic-webfont.css": ["less/nanumGothic-webfont.less"]
 				}
 			}
 		},
@@ -12,6 +17,19 @@ module.exports = function(grunt) {
 			less:{
 				files: ['less/*.less'],
 				tasks: ['less']
+			},
+			copy:{
+				files: ['*.html','*.css'],
+				tasks: ['copy']
+			}
+		},
+		copy:{
+			main:{
+				files:[
+				{expand:true,src:["*.html"],dest:"../demo/"},
+				{expand:true,src:["*.css"],dest:"../demo/"},
+				{expand:true,src:["fonts/*"],dest:"../demo/"}
+				]
 			}
 		}
   });

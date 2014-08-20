@@ -10,3 +10,9 @@ nanumGothic
 4. nanumGothicV4.css 을 열어, 경로를 맞추어 줍니다.
 5. 사용하고자 하는 웹페이지에 "nanumGothicV4.css" 파일을 연결합니다.
 <link type="text/stylesheet" src="nanumGothicV4.css" />
+
+
+ㅡㅡㅡ
+
+현재까지의 오류
+1. 사파리에서 한문을 사용시 정상적으로 표시되지 않음.

@@ -10,8 +10,10 @@ nanumGothic
 4. nanumGothic.css 을 열어, 경로를 맞추어 줍니다.
 5. 사용하고자 하는 웹페이지에 "nanumGothic.css" 파일 및 js을 연결해줍니다.
 
-    <link rel="stylesheet" type="text/css" href="nanumGothic.css" id="nanumGothicCSS" /> <!-- id부분을 수정하지 마세요. -->
-    <script type="text/javascript" src="nanumGothic.js"></script>
+"'
+<link rel="stylesheet" type="text/css" href="nanumGothic.css" id="nanumGothicCSS" /> <!-- id부분을 수정하지 마세요. -->
+<script type="text/javascript" src="nanumGothic.js"></script>
+'"
 
 =========================================
 
